@@ -1,0 +1,1498 @@
+{
+  "$schema": "./schemas/trip-data.schema.json",
+  "schemaVersion": "2.0-lite",
+  "config": {
+    "schemaVersion": "1.0.0",
+    "modules": {
+      "flights": true,
+      "overview": true,
+      "itinerary": true,
+      "todo": true,
+      "driving": false,
+      "ledger": false
+    },
+    "language": "zh-CN",
+    "persistence": {
+      "mode": "local"
+    }
+  },
+  "metadata": {
+    "tripId": "hokkaido-tokyo-2026",
+    "title": "北海道与东京之旅",
+    "language": "zh-CN",
+    "assets": {
+      "routeMaps": [
+        "assets/maps/templates/template-02-archipelago.webp"
+      ]
+    }
+  },
+  "trip": {
+    "status": "draft",
+    "startDate": "2026-12-12",
+    "endDate": "2026-12-23",
+    "dayCount": 12,
+    "nightCountAway": 11,
+    "countries": [
+      "日本"
+    ],
+    "primaryDestinationCountries": [
+      "日本"
+    ],
+    "primaryDestinationName": "北海道与东京",
+    "citiesAndAreas": [
+      "札幌",
+      "小樽",
+      "洞爷湖",
+      "定山溪",
+      "旭川",
+      "美瑛",
+      "东京"
+    ],
+    "routeSummary": "札幌—小樽—洞爷湖—定山溪—旭川—美瑛—东京",
+    "groupSize": null
+  },
+  "flightJourneys": [
+    {
+      "id": "outbound",
+      "title": "去程",
+      "date": "2026-12-12"
+    },
+    {
+      "id": "return",
+      "title": "返程",
+      "date": "2026-12-23"
+    },
+    {
+      "id": "domestic",
+      "title": "日本国内航班",
+      "date": "2026-12-20"
+    }
+  ],
+  "flights": [
+    {
+      "id": "cx526-outbound",
+      "journeyId": "outbound",
+      "sequence": 1,
+      "airline": {
+        "name": "Cathay Pacific",
+        "nameZh": "国泰航空"
+      },
+      "flightNumber": "CX526",
+      "departure": {
+        "airportCode": "HKG",
+        "city": "香港",
+        "date": "2026-12-12",
+        "time": "08:15",
+        "utcOffset": "+08:00"
+      },
+      "arrival": {
+        "airportCode": "NRT",
+        "city": "东京",
+        "date": "2026-12-12",
+        "time": "13:10",
+        "utcOffset": "+09:00"
+      }
+    },
+    {
+      "id": "nh2155",
+      "journeyId": "outbound",
+      "sequence": 2,
+      "airline": {
+        "name": "All Nippon Airways",
+        "nameZh": "全日本空输"
+      },
+      "flightNumber": "NH2155",
+      "departure": {
+        "airportCode": "NRT",
+        "city": "东京",
+        "date": "2026-12-12",
+        "time": "17:50",
+        "utcOffset": "+09:00"
+      },
+      "arrival": {
+        "airportCode": "CTS",
+        "city": "札幌",
+        "date": "2026-12-12",
+        "time": "19:40",
+        "utcOffset": "+09:00"
+      }
+    },
+    {
+      "id": "cx526-return",
+      "journeyId": "return",
+      "sequence": 1,
+      "airline": {
+        "name": "Cathay Pacific",
+        "nameZh": "国泰航空"
+      },
+      "flightNumber": "CX526",
+      "departure": {
+        "airportCode": "NRT",
+        "city": "东京",
+        "date": "2026-12-23",
+        "time": "18:10",
+        "utcOffset": "+09:00"
+      },
+      "arrival": {
+        "airportCode": "HKG",
+        "city": "香港",
+        "date": "2026-12-23",
+        "time": "22:30",
+        "utcOffset": "+08:00"
+      }
+    },
+    {
+      "id": "jl552",
+      "journeyId": "domestic",
+      "sequence": 1,
+      "airline": {
+        "name": "Japan Airlines",
+        "nameZh": "日本航空"
+      },
+      "flightNumber": "JL552",
+      "departure": {
+        "airportCode": "AKJ",
+        "city": "旭川",
+        "date": "2026-12-20",
+        "time": "10:00",
+        "utcOffset": "+09:00"
+      },
+      "arrival": {
+        "airportCode": "HND",
+        "city": "东京",
+        "date": "2026-12-20",
+        "time": "11:55",
+        "utcOffset": "+09:00"
+      }
+    }
+  ],
+  "accommodations": [
+    {
+      "id": "sapporo-mitsui",
+      "name": "札幌三井花园酒店",
+      "city": "札幌",
+      "checkIn": "2026-12-12",
+      "checkOut": "2026-12-15"
+    },
+    {
+      "id": "toya-nonokaze",
+      "name": "洞爷湖乃之风温泉酒店",
+      "city": "洞爷湖",
+      "checkIn": "2026-12-15",
+      "checkOut": "2026-12-16"
+    },
+    {
+      "id": "jozankei-suizantei",
+      "name": "定山溪翠山亭",
+      "city": "定山溪",
+      "checkIn": "2026-12-16",
+      "checkOut": "2026-12-17"
+    },
+    {
+      "id": "asahikawa-jr",
+      "name": "JR 旭川酒店",
+      "city": "旭川",
+      "checkIn": "2026-12-17",
+      "checkOut": "2026-12-20"
+    },
+    {
+      "id": "tokyo-royal-park-canvas",
+      "name": "The Royal Park Canvas – Ginza Corridor",
+      "city": "东京",
+      "checkIn": "2026-12-20",
+      "checkOut": "2026-12-23"
+    }
+  ],
+  "groundTransport": {
+    "rentalCar": null,
+    "rentalChecklist": [],
+    "drivingNotes": [],
+    "drivingReferenceLinks": [],
+    "plannedRoadLegs": [],
+    "publicTransitAndRail": [
+      {
+        "id": "jr-sapporo-otaru",
+        "date": "2026-12-14",
+        "text": "JR：札幌前往小樽；中途地点名称待确认。"
+      }
+    ]
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-12-12",
+      "title": "香港—东京—札幌",
+      "locations": [
+        "sapporo"
+      ],
+      "schedule": [
+        {
+          "id": "d1-flight1",
+          "time": "08:15–13:10",
+          "type": "flight",
+          "text": "CX526 香港 HKG → 东京成田 NRT"
+        },
+        {
+          "id": "d1-flight2",
+          "time": "17:50–19:40",
+          "type": "flight",
+          "text": "NH2155 东京成田 NRT → 札幌新千岁 CTS"
+        },
+        {
+          "id": "d1-hotel",
+          "time": "",
+          "type": "check-in",
+          "text": "入住：札幌三井花园酒店。"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-12-13",
+      "title": "札幌",
+      "locations": [
+        "sapporo"
+      ],
+      "schedule": [
+        {
+          "id": "d2-hotel",
+          "time": "",
+          "type": "note",
+          "text": "住宿：札幌三井花园酒店；当天活动待补充。"
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-12-14",
+      "title": "札幌—小樽",
+      "locations": [
+        "sapporo",
+        "otaru"
+      ],
+      "schedule": [
+        {
+          "id": "d3-route",
+          "time": "",
+          "type": "transfer",
+          "text": "札幌 → “钱涵”（地点名称待确认）→ 小樽；交通：JR。"
+        },
+        {
+          "id": "d3-hotel",
+          "time": "",
+          "type": "note",
+          "text": "住宿：札幌三井花园酒店。"
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-12-15",
+      "title": "札幌—洞爷湖",
+      "locations": [
+        "sapporo",
+        "lake-toya"
+      ],
+      "schedule": [
+        {
+          "id": "d4-route",
+          "time": "",
+          "type": "transfer",
+          "text": "札幌 → 洞爷湖。"
+        },
+        {
+          "id": "d4-hotel",
+          "time": "",
+          "type": "check-in",
+          "text": "入住：洞爷湖乃之风温泉酒店。"
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-12-16",
+      "title": "洞爷湖—定山溪",
+      "locations": [
+        "lake-toya",
+        "jozankei"
+      ],
+      "schedule": [
+        {
+          "id": "d5-route",
+          "time": "",
+          "type": "transfer",
+          "text": "洞爷湖 → 定山溪。"
+        },
+        {
+          "id": "d5-hotel",
+          "time": "",
+          "type": "check-in",
+          "text": "入住：定山溪翠山亭。"
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-12-17",
+      "title": "定山溪—旭川",
+      "locations": [
+        "jozankei",
+        "asahikawa"
+      ],
+      "schedule": [
+        {
+          "id": "d6-route",
+          "time": "",
+          "type": "transfer",
+          "text": "定山溪 → 旭川。"
+        },
+        {
+          "id": "d6-hotel",
+          "time": "",
+          "type": "check-in",
+          "text": "入住：JR 旭川酒店。"
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-12-18",
+      "title": "旭川",
+      "locations": [
+        "asahikawa",
+        "asahiyama-zoo",
+        "kamikawa-shrine"
+      ],
+      "schedule": [
+        {
+          "id": "d7-pending-place",
+          "time": "",
+          "type": "attraction",
+          "text": "“见本林”（地点名称待确认）。"
+        },
+        {
+          "id": "d7-zoo",
+          "time": "",
+          "type": "attraction",
+          "text": "旭川动物园。",
+          "placeId": "asahiyama-zoo"
+        },
+        {
+          "id": "d7-shrine",
+          "time": "",
+          "type": "attraction",
+          "text": "上川神社。",
+          "placeId": "kamikawa-shrine"
+        },
+        {
+          "id": "d7-hotel",
+          "time": "",
+          "type": "note",
+          "text": "住宿：JR 旭川酒店。"
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "2026-12-19",
+      "title": "旭川—美瑛",
+      "locations": [
+        "asahikawa",
+        "biei-christmas-tree",
+        "shirihige-falls",
+        "asahikawa"
+      ],
+      "schedule": [
+        {
+          "id": "d8-route",
+          "time": "",
+          "type": "transfer",
+          "text": "旭川 → 美瑛。"
+        },
+        {
+          "id": "d8-tree",
+          "time": "",
+          "type": "attraction",
+          "text": "圣诞树。",
+          "placeId": "biei-christmas-tree"
+        },
+        {
+          "id": "d8-falls",
+          "time": "",
+          "type": "attraction",
+          "text": "白须瀑布。",
+          "placeId": "shirihige-falls"
+        },
+        {
+          "id": "d8-return",
+          "time": "",
+          "type": "transfer",
+          "text": "返回旭川；住宿：JR 旭川酒店。"
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "date": "2026-12-20",
+      "title": "旭川—东京",
+      "locations": [
+        "asahikawa",
+        "tokyo"
+      ],
+      "schedule": [
+        {
+          "id": "d9-flight",
+          "time": "10:00–11:55",
+          "type": "flight",
+          "text": "JL552 旭川 AKJ → 东京羽田 HND，10:00–11:55（按行程表记录）。"
+        },
+        {
+          "id": "d9-hotel",
+          "time": "",
+          "type": "check-in",
+          "text": "入住：The Royal Park Canvas – Ginza Corridor。当天活动待补充。"
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "2026-12-21",
+      "title": "东京",
+      "locations": [
+        "tokyo"
+      ],
+      "schedule": [
+        {
+          "id": "d10-hotel",
+          "time": "",
+          "type": "note",
+          "text": "住宿：The Royal Park Canvas – Ginza Corridor；当天活动待补充。"
+        }
+      ]
+    },
+    {
+      "day": 11,
+      "date": "2026-12-22",
+      "title": "东京",
+      "locations": [
+        "tokyo"
+      ],
+      "schedule": [
+        {
+          "id": "d11-hotel",
+          "time": "",
+          "type": "note",
+          "text": "住宿：The Royal Park Canvas – Ginza Corridor；当天活动待补充。"
+        }
+      ]
+    },
+    {
+      "day": 12,
+      "date": "2026-12-23",
+      "title": "东京—香港",
+      "locations": [
+        "tokyo"
+      ],
+      "schedule": [
+        {
+          "id": "d12-flight",
+          "time": "18:10–22:30",
+          "type": "flight",
+          "text": "CX526 东京成田 NRT → 香港 HKG。"
+        },
+        {
+          "id": "d12-hotel",
+          "time": "",
+          "type": "check-out",
+          "text": "退房：The Royal Park Canvas – Ginza Corridor。"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "sapporo",
+      "name": "札幌",
+      "countryCode": "JP",
+      "latitude": 43.0618,
+      "longitude": 141.3545
+    },
+    {
+      "id": "otaru",
+      "name": "小樽",
+      "countryCode": "JP",
+      "latitude": 43.1907,
+      "longitude": 140.9947
+    },
+    {
+      "id": "lake-toya",
+      "name": "洞爷湖",
+      "countryCode": "JP",
+      "latitude": 42.568,
+      "longitude": 140.82
+    },
+    {
+      "id": "jozankei",
+      "name": "定山溪",
+      "countryCode": "JP",
+      "latitude": 42.967,
+      "longitude": 141.166
+    },
+    {
+      "id": "asahikawa",
+      "name": "旭川",
+      "countryCode": "JP",
+      "latitude": 43.7706,
+      "longitude": 142.365
+    },
+    {
+      "id": "asahiyama-zoo",
+      "name": "旭川动物园",
+      "countryCode": "JP",
+      "latitude": 43.7687,
+      "longitude": 142.4807
+    },
+    {
+      "id": "kamikawa-shrine",
+      "name": "上川神社",
+      "countryCode": "JP",
+      "latitude": 43.7567,
+      "longitude": 142.3659
+    },
+    {
+      "id": "biei-christmas-tree",
+      "name": "美瑛圣诞树",
+      "countryCode": "JP",
+      "latitude": 43.547,
+      "longitude": 142.428
+    },
+    {
+      "id": "shirihige-falls",
+      "name": "白须瀑布",
+      "countryCode": "JP",
+      "latitude": 43.474,
+      "longitude": 142.638
+    },
+    {
+      "id": "tokyo",
+      "name": "东京",
+      "countryCode": "JP",
+      "latitude": 35.6762,
+      "longitude": 139.6503
+    }
+  ],
+  "restaurants": [],
+  "bookingsAndTickets": [],
+  "ticketPlanning": {
+    "statusStorage": "local",
+    "statusStorageNote": "门票状态默认只保存在当前浏览器。",
+    "items": []
+  },
+  "preTrip": {
+    "packingItems": [],
+    "preparationsExplicitlyMentioned": [],
+    "missingNote": "当前未提供待办事项。"
+  },
+  "mapLinks": {
+    "providedGoogleMapsLinks": [],
+    "note": "",
+    "cityLevelNavigationDisabled": false,
+    "navigationPolicy": {
+      "noNavigationTypes": [
+        "flight",
+        "note",
+        "rest"
+      ],
+      "selfNavigationTypes": [
+        "drive",
+        "return",
+        "transfer",
+        "check-in",
+        "check-out",
+        "restaurant",
+        "attraction",
+        "walk",
+        "hike"
+      ]
+    },
+    "navigationPlaces": []
+  },
+  "issuesAndUncertainties": [
+    {
+      "id": "uncertain-1214",
+      "date": "2026-12-14",
+      "text": "行程地点中的“钱涵”名称不明确，暂不纳入地图。"
+    },
+    {
+      "id": "uncertain-1218",
+      "date": "2026-12-18",
+      "text": "活动名称“见本林”不明确，暂按原文显示并标记待确认。"
+    },
+    {
+      "id": "missing-activities",
+      "date": "2026-12-20",
+      "text": "12/20–12/22 东京活动安排待补充。"
+    }
+  ],
+  "map": {
+    "schemaVersion": "1.0-lite",
+    "mapMode": "template-auto",
+    "templateId": "auto",
+    "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+    "places": [
+      {
+        "id": "sapporo",
+        "name": "札幌",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 43.0618,
+          "lng": 141.3545
+        },
+        "days": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "id": "otaru",
+        "name": "小樽",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 43.1907,
+          "lng": 140.9947
+        },
+        "days": [
+          3
+        ]
+      },
+      {
+        "id": "lake-toya",
+        "name": "洞爷湖",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 42.568,
+          "lng": 140.82
+        },
+        "days": [
+          4,
+          5
+        ]
+      },
+      {
+        "id": "jozankei",
+        "name": "定山溪",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 42.967,
+          "lng": 141.166
+        },
+        "days": [
+          5,
+          6
+        ]
+      },
+      {
+        "id": "asahikawa",
+        "name": "旭川",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 43.7706,
+          "lng": 142.365
+        },
+        "days": [
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      {
+        "id": "asahiyama-zoo",
+        "name": "旭川动物园",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 43.7687,
+          "lng": 142.4807
+        },
+        "days": [
+          7
+        ]
+      },
+      {
+        "id": "kamikawa-shrine",
+        "name": "上川神社",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 43.7567,
+          "lng": 142.3659
+        },
+        "days": [
+          7
+        ]
+      },
+      {
+        "id": "biei-christmas-tree",
+        "name": "美瑛圣诞树",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 43.547,
+          "lng": 142.428
+        },
+        "days": [
+          8
+        ]
+      },
+      {
+        "id": "shirihige-falls",
+        "name": "白须瀑布",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 43.474,
+          "lng": 142.638
+        },
+        "days": [
+          8
+        ]
+      },
+      {
+        "id": "tokyo",
+        "name": "东京",
+        "countryCode": "JP",
+        "geo": {
+          "lat": 35.6762,
+          "lng": 139.6503
+        },
+        "days": [
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    ],
+    "routes": [
+      {
+        "id": "day-3",
+        "day": 3,
+        "placeIds": [
+          "sapporo",
+          "otaru"
+        ]
+      },
+      {
+        "id": "day-4",
+        "day": 4,
+        "placeIds": [
+          "sapporo",
+          "lake-toya"
+        ]
+      },
+      {
+        "id": "day-5",
+        "day": 5,
+        "placeIds": [
+          "lake-toya",
+          "jozankei"
+        ]
+      },
+      {
+        "id": "day-6",
+        "day": 6,
+        "placeIds": [
+          "jozankei",
+          "asahikawa"
+        ]
+      },
+      {
+        "id": "day-7",
+        "day": 7,
+        "placeIds": [
+          "asahikawa",
+          "asahiyama-zoo",
+          "kamikawa-shrine"
+        ]
+      },
+      {
+        "id": "day-8",
+        "day": 8,
+        "placeIds": [
+          "asahikawa",
+          "biei-christmas-tree",
+          "shirihige-falls",
+          "asahikawa"
+        ]
+      },
+      {
+        "id": "day-9",
+        "day": 9,
+        "placeIds": [
+          "asahikawa",
+          "tokyo"
+        ]
+      }
+    ],
+    "dailyRoutes": [
+      {
+        "day": 3,
+        "placeIds": [
+          "sapporo",
+          "otaru"
+        ]
+      },
+      {
+        "day": 4,
+        "placeIds": [
+          "sapporo",
+          "lake-toya"
+        ]
+      },
+      {
+        "day": 5,
+        "placeIds": [
+          "lake-toya",
+          "jozankei"
+        ]
+      },
+      {
+        "day": 6,
+        "placeIds": [
+          "jozankei",
+          "asahikawa"
+        ]
+      },
+      {
+        "day": 7,
+        "placeIds": [
+          "asahikawa",
+          "asahiyama-zoo",
+          "kamikawa-shrine"
+        ]
+      },
+      {
+        "day": 8,
+        "placeIds": [
+          "asahikawa",
+          "biei-christmas-tree",
+          "shirihige-falls",
+          "asahikawa"
+        ]
+      },
+      {
+        "day": 9,
+        "placeIds": [
+          "asahikawa",
+          "tokyo"
+        ]
+      }
+    ],
+    "region": {
+      "id": "japan-route",
+      "label": "北海道与东京",
+      "countryCode": "JP",
+      "description": "北海道与东京行程示意图"
+    }
+  },
+  "routeMap": {
+    "defaultRegionId": "japan-route",
+    "regions": [
+      {
+        "id": "japan-route",
+        "label": "北海道与东京",
+        "countryCode": "JP",
+        "scope": "template-schematic",
+        "mapMode": "frozen-template",
+        "templateId": "island-archipelago",
+        "mapModeReason": "separated-clusters-or-long-jump",
+        "mapModeMetrics": {
+          "placeCount": 10,
+          "geoPlaceCount": 10,
+          "widthKm": 244.2,
+          "heightKm": 898.48,
+          "spanKm": 931.67,
+          "averageNearestKm": 94.12,
+          "components": 1,
+          "largestLegKm": 929.37,
+          "jumpRatio": 23.45
+        },
+        "days": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "canvas": {
+          "width": 1448,
+          "height": 1086
+        },
+        "projection": {
+          "type": "relative-schematic",
+          "bounds": null
+        },
+        "baseImage": "assets/maps/templates/template-02-archipelago.webp",
+        "title": "北海道与东京 · 旅行路线",
+        "ariaLabel": "北海道与东京模板化旅行路线示意图，共7天",
+        "description": "北海道与东京行程示意图",
+        "disclaimer": "本图仅表达地点的相对方位与路线顺序，不代表真实比例或精确地理边界。",
+        "heading": {
+          "text": "北海道与东京",
+          "x": 33,
+          "y": 105,
+          "size": 40
+        },
+        "legend": {
+          "x": 35,
+          "y": 168,
+          "gap": 43
+        },
+        "annotations": [],
+        "routes": [
+          {
+            "day": 3,
+            "color": "#618344",
+            "placeIds": [
+              "sapporo",
+              "otaru"
+            ],
+            "paths": [
+              "M901.49 385.27 C850.7 344.4 814.9 293.1 796.4 234.3"
+            ],
+            "overviewPaths": [
+              "M901.49 385.27 C850.7 344.4 814.9 293.1 796.4 234.3"
+            ]
+          },
+          {
+            "day": 4,
+            "color": "#209aaa",
+            "placeIds": [
+              "sapporo",
+              "lake-toya"
+            ],
+            "paths": [
+              "M901.49 385.27 C870.1 367.7 836.5 359.9 802.53 362.56"
+            ],
+            "overviewPaths": [
+              "M901.49 385.27 C870.1 367.7 836.5 359.9 802.53 362.56"
+            ]
+          },
+          {
+            "day": 5,
+            "color": "#8865a5",
+            "placeIds": [
+              "lake-toya",
+              "jozankei"
+            ],
+            "paths": [
+              "M802.53 362.56 C818.7 334.4 841.1 312.8 868.6 299.17"
+            ],
+            "overviewPaths": [
+              "M802.53 362.56 C818.7 334.4 841.1 312.8 868.6 299.17"
+            ]
+          },
+          {
+            "day": 6,
+            "color": "#df6185",
+            "placeIds": [
+              "jozankei",
+              "asahikawa"
+            ],
+            "paths": [
+              "M868.6 299.17 C923.1 261.6 963.2 212.2 986.3 154"
+            ],
+            "overviewPaths": [
+              "M868.6 299.17 C923.1 261.6 963.2 212.2 986.3 154"
+            ]
+          },
+          {
+            "day": 7,
+            "color": "#397dc1",
+            "placeIds": [
+              "asahikawa",
+              "asahiyama-zoo",
+              "kamikawa-shrine"
+            ],
+            "paths": [
+              "M986.3 154 C1012.0 178.6 1029.0 208.1 1036.24 240.97 C988.4 201.6 933.8 178.2 875.44 172.36"
+            ],
+            "overviewPaths": [
+              "M986.3 154 C1012.0 178.6 1029.0 208.1 1036.24 240.97 C988.4 201.6 933.8 178.2 875.44 172.36"
+            ]
+          },
+          {
+            "day": 8,
+            "color": "#e77e22",
+            "placeIds": [
+              "asahikawa",
+              "biei-christmas-tree",
+              "shirihige-falls",
+              "asahikawa"
+            ],
+            "paths": [
+              "M986.3 154 C967.0 212.1 965.0 270.8 980.31 326.61 C958.2 300.6 944.8 270.8 941.05 238.71 C964.9 214.4 980.3 185.6 986.3 154"
+            ],
+            "overviewPaths": [
+              "M986.3 154 C967.0 212.1 965.0 270.8 980.31 326.61 C958.2 300.6 944.8 270.8 941.05 238.71 C964.9 214.4 980.3 185.6 986.3 154"
+            ]
+          },
+          {
+            "day": 9,
+            "color": "#618344",
+            "placeIds": [
+              "asahikawa",
+              "tokyo"
+            ],
+            "paths": [
+              "M986.3 154 C949.4 387.9 883.7 613.4 793.05 817.3"
+            ],
+            "overviewPaths": [
+              "M986.3 154 C949.4 387.9 883.7 613.4 793.05 817.3"
+            ]
+          }
+        ],
+        "places": [
+          {
+            "id": "sapporo",
+            "x": 901.49,
+            "y": 385.27,
+            "color": "#397dc1",
+            "tx": 933.49,
+            "ty": 435.27,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "札幌"
+            ],
+            "query": "札幌 北海道与东京",
+            "geo": {
+              "lat": 43.0618,
+              "lng": 141.3545
+            },
+            "days": [
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "id": "otaru",
+            "x": 796.4,
+            "y": 234.3,
+            "color": "#618344",
+            "tx": 764.4,
+            "ty": 202.3,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "小樽"
+            ],
+            "query": "小樽 北海道与东京",
+            "geo": {
+              "lat": 43.1907,
+              "lng": 140.9947
+            },
+            "days": [
+              3
+            ]
+          },
+          {
+            "id": "lake-toya",
+            "x": 802.53,
+            "y": 362.56,
+            "color": "#209aaa",
+            "tx": 724.53,
+            "ty": 300.56,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "洞爷湖"
+            ],
+            "query": "洞爷湖 北海道与东京",
+            "geo": {
+              "lat": 42.568,
+              "lng": 140.82
+            },
+            "days": [
+              4,
+              5
+            ]
+          },
+          {
+            "id": "jozankei",
+            "x": 868.6,
+            "y": 299.17,
+            "color": "#8865a5",
+            "tx": 730.6,
+            "ty": 401.17,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "定山溪"
+            ],
+            "query": "定山溪 北海道与东京",
+            "geo": {
+              "lat": 42.967,
+              "lng": 141.166
+            },
+            "days": [
+              5,
+              6
+            ]
+          },
+          {
+            "id": "asahikawa",
+            "x": 986.3,
+            "y": 154,
+            "color": "#df6185",
+            "tx": 1124.3,
+            "ty": 66,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "旭川"
+            ],
+            "query": "旭川 北海道与东京",
+            "geo": {
+              "lat": 43.7706,
+              "lng": 142.365
+            },
+            "days": [
+              6,
+              7,
+              8,
+              9
+            ]
+          },
+          {
+            "id": "asahiyama-zoo",
+            "x": 1036.24,
+            "y": 240.97,
+            "color": "#397dc1",
+            "tx": 1174.24,
+            "ty": 342.97,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "旭川动物园"
+            ],
+            "query": "旭川动物园 北海道与东京",
+            "geo": {
+              "lat": 43.7687,
+              "lng": 142.4807
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "kamikawa-shrine",
+            "x": 875.44,
+            "y": 172.36,
+            "color": "#397dc1",
+            "tx": 843.44,
+            "ty": 140.36,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "上川神社"
+            ],
+            "query": "上川神社 北海道与东京",
+            "geo": {
+              "lat": 43.7567,
+              "lng": 142.3659
+            },
+            "days": [
+              7
+            ]
+          },
+          {
+            "id": "biei-christmas-tree",
+            "x": 980.31,
+            "y": 326.61,
+            "color": "#e77e22",
+            "tx": 1058.31,
+            "ty": 264.61,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "美瑛圣诞树"
+            ],
+            "query": "美瑛圣诞树 北海道与东京",
+            "geo": {
+              "lat": 43.547,
+              "lng": 142.428
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "shirihige-falls",
+            "x": 941.05,
+            "y": 238.71,
+            "color": "#e77e22",
+            "tx": 1019.05,
+            "ty": 176.71,
+            "size": 24,
+            "anchor": "start",
+            "lines": [
+              "白须瀑布"
+            ],
+            "query": "白须瀑布 北海道与东京",
+            "geo": {
+              "lat": 43.474,
+              "lng": 142.638
+            },
+            "days": [
+              8
+            ]
+          },
+          {
+            "id": "tokyo",
+            "x": 793.05,
+            "y": 817.3,
+            "color": "#618344",
+            "tx": 715.05,
+            "ty": 755.3,
+            "size": 24,
+            "anchor": "end",
+            "lines": [
+              "东京"
+            ],
+            "query": "东京 北海道与东京",
+            "geo": {
+              "lat": 35.6762,
+              "lng": 139.6503
+            },
+            "days": [
+              9,
+              10,
+              11,
+              12
+            ]
+          }
+        ],
+        "overviewPlaceIds": [
+          "sapporo",
+          "otaru",
+          "lake-toya",
+          "jozankei",
+          "asahikawa",
+          "asahiyama-zoo",
+          "kamikawa-shrine",
+          "biei-christmas-tree",
+          "shirihige-falls",
+          "tokyo"
+        ],
+        "dailyLayouts": {
+          "3": {
+            "places": [
+              "sapporo",
+              "otaru"
+            ],
+            "labels": {
+              "sapporo": {
+                "x": 933.49,
+                "y": 435.27,
+                "anchor": "start"
+              },
+              "otaru": {
+                "x": 764.4,
+                "y": 202.3,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 848.94,
+                "y": 309.78
+              }
+            ]
+          },
+          "4": {
+            "places": [
+              "sapporo",
+              "lake-toya"
+            ],
+            "labels": {
+              "sapporo": {
+                "x": 933.49,
+                "y": 435.27,
+                "anchor": "start"
+              },
+              "lake-toya": {
+                "x": 724.53,
+                "y": 300.56,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 852.01,
+                "y": 373.91
+              }
+            ]
+          },
+          "5": {
+            "places": [
+              "lake-toya",
+              "jozankei"
+            ],
+            "labels": {
+              "lake-toya": {
+                "x": 724.53,
+                "y": 300.56,
+                "anchor": "end"
+              },
+              "jozankei": {
+                "x": 730.6,
+                "y": 401.17,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 835.57,
+                "y": 330.87
+              }
+            ]
+          },
+          "6": {
+            "places": [
+              "jozankei",
+              "asahikawa"
+            ],
+            "labels": {
+              "jozankei": {
+                "x": 730.6,
+                "y": 401.17,
+                "anchor": "end"
+              },
+              "asahikawa": {
+                "x": 1124.3,
+                "y": 66,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 927.45,
+                "y": 226.59
+              }
+            ]
+          },
+          "7": {
+            "places": [
+              "asahikawa",
+              "asahiyama-zoo",
+              "kamikawa-shrine"
+            ],
+            "labels": {
+              "asahikawa": {
+                "x": 1124.3,
+                "y": 66,
+                "anchor": "start"
+              },
+              "asahiyama-zoo": {
+                "x": 1174.24,
+                "y": 342.97,
+                "anchor": "start"
+              },
+              "kamikawa-shrine": {
+                "x": 843.44,
+                "y": 140.36,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 1011.27,
+                "y": 197.49
+              },
+              {
+                "items": [],
+                "x": 955.84,
+                "y": 206.67
+              }
+            ]
+          },
+          "8": {
+            "places": [
+              "asahikawa",
+              "biei-christmas-tree",
+              "shirihige-falls"
+            ],
+            "labels": {
+              "asahikawa": {
+                "x": 1124.3,
+                "y": 66,
+                "anchor": "start"
+              },
+              "biei-christmas-tree": {
+                "x": 1058.31,
+                "y": 264.61,
+                "anchor": "start"
+              },
+              "shirihige-falls": {
+                "x": 1019.05,
+                "y": 176.71,
+                "anchor": "start"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 983.3,
+                "y": 240.31
+              },
+              {
+                "items": [],
+                "x": 960.68,
+                "y": 282.66
+              },
+              {
+                "items": [],
+                "x": 963.67,
+                "y": 196.36
+              }
+            ]
+          },
+          "9": {
+            "places": [
+              "asahikawa",
+              "tokyo"
+            ],
+            "labels": {
+              "asahikawa": {
+                "x": 1124.3,
+                "y": 66,
+                "anchor": "start"
+              },
+              "tokyo": {
+                "x": 715.05,
+                "y": 755.3,
+                "anchor": "end"
+              }
+            },
+            "transport": [
+              {
+                "items": [],
+                "x": 889.67,
+                "y": 485.65
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}
